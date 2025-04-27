@@ -1,24 +1,22 @@
-# Use official PHP image as base
-FROM php:8.1-fpm
+# Use an official PHP runtime as a parent image
+FROM php:8.0-fpm
 
-# Install system dependencies for Laravel
-RUN apt-get update && apt-get install -y libpng-dev libjpeg-dev libfreetype6-dev libxml2-dev libssl-dev unzip git curl
+# Set the working directory inside the container
+WORKDIR /var/www/html/laravel-fee-management
+
+# Copy the current directory contents into the container
+COPY . /var/www/html/laravel-fee-management
+
+# Install system dependencies, then install PHP extensions
+RUN apt-get update && apt-get install -y libpng-dev libjpeg-dev libfreetype6-dev zip git && \
+    docker-php-ext-configure gd --with-freetype --with-jpeg && \
+    docker-php-ext-install gd pdo pdo_mysql
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Install PHP extensions required by Laravel
-RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install gd pdo pdo_mysql xml
-
-# Set working directory
-WORKDIR /var/www
-
-# Copy the Laravel application to the working directory
-COPY . .
-
-# Install Composer dependencies
-RUN composer install --no-interaction --prefer-dist
+# Install Laravel dependencies
+RUN composer install
 
 # Expose port 9000 and start PHP-FPM server
 EXPOSE 9000
