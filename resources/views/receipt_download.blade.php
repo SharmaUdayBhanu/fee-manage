@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethereal Echoes School Fees Receipt</title>
+    <title>Dayanand Model School Fees Receipt</title>
     <link rel="icon" type="image/png" href="{{url('logo/logo-color.png')}}">
     <link rel="stylesheet" type="text/css" href="{{url('Bootstrap/css/bootstrap.min.css')}}">
 </head>
@@ -18,7 +18,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-12 text-center">
-            <h1 class="text-success">Ethereal Echoes School Fees Receipt</h1>
+            <h1 class="text-success">Dayanand Model School Fees Receipt</h1>
             <p>Printed at {{ date('Y-m-d H:i:s') }}</p>
         </div>
     </div>
@@ -83,7 +83,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-               <strong><p class="font-weight-bold">&copy; {{ date('Y') }} Ethereal Echoes School. All rights reserved.</p></strong>
+               <strong><p class="font-weight-bold">&copy; {{ date('Y') }} Dayanand Model School. All rights reserved.</p></strong>
             </div>
         </div>
     </div>

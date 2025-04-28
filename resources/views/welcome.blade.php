@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}"><!--the second one is variable and the value comes inside this variable is from ajax-->
-    <title>Ethereal Echoes School Fees Payment</title>
+    <title>Dayanand Model School Fees Payment</title>
     <link rel="icon" type="image/png" href="{{url('logo/logo-color.png')}}">
     <link rel="stylesheet" type="text/css" href="{{url('Bootstrap/css/bootstrap.min.css')}}">  
   
 </head>
 <body>
 <div class="container text-center mt-4">
-    <a href="{{url('/')}}" style="display: inline-block;"><img src="{{url('logo/logo-color.png')}}" alt="Logo" style="height: 100px; width:300px;"></a>
-    <h1 class="text-danger " style="display: inline-block;">Ethereal Echoes School Fees Payment</h1>
+    <a href="{{url('/')}}" style="display: inline-block;"><img src="{{url('logo/logo-color.png')}}" alt="Logo" style="height: 150px; width:150px;"></a>
+    <h1 class="text-danger " style="display: inline-block;">Dayanand Model School Fees Payment</h1>
 </div>
 {{--Model Button--}}
 <div class="container" style="text-align: right;">
@@ -129,7 +129,7 @@ function paynow(amount,razororderid,name,email,contact){
     "key": "{{env('RAZORPAY_KEY_ID')}}", // Enter the Key ID generated from the Dashboard
     "amount": amount, //pass through backend order id created controller
     "currency": "INR",
-    "name": "Ethereal Echoes School", //your business name
+    "name": "Dayanand Model School", //your business name
     "description": "School Fees Payment",
     "image": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/razorpay-icon.png",
     "order_id": razororderid, //pass through backend
@@ -140,7 +140,7 @@ function paynow(amount,razororderid,name,email,contact){
         "contact": contact //If given here so pass from backend order id created 
     },
     "notes": {
-        "address": "Ethereal Echoes School "
+        "address": "Dayanand Model School "
     },
     "theme": {
         "color": "#0dcaf0"
@@ -170,7 +170,7 @@ rzp1.open();
   <div class="modal-dialog" >
     <div class="modal-content" style="background-color:whitesmoke">
       <div class="modal-header">
-        <h1 class="modal-title fs-5 text-danger" id="exampleModalLabel"><strong>Ethereal Echoes School Fees Receipt</strong></h1>
+        <h1 class="modal-title fs-5 text-danger" id="exampleModalLabel"><strong>Dayanand Model School Fees Receipt</strong></h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">

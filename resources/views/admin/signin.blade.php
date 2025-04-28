@@ -6,7 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}"><!--the second one is variable and the value comes inside this variable is from ajax-->
     <link rel="icon" type="image/png" href="{{url('logo/logo-color.png')}}">
     <link rel="stylesheet" type="text/css" href="{{url('Bootstrap/css/bootstrap.min.css')}}">  
-    <title>Signin</title>
+    <title>Dayanand Model School Signin</title>
 </head>
 <body>
 <section>
@@ -15,11 +15,11 @@
       <div class="row gx-lg-5 align-items-center">
         <div class="col-lg-6 mb-5 mb-lg-0">
           <h1 class="my-5 display-3 fw-bold ls-tight">
-          Ethereal Echoes School <br>
+          Dayanand Model School <br>
             <span class="text-info"> Admin Dashboard</span>
           </h1>
           <p>
-          Ethereal Echoes School is a leading educational institution committed to fostering academic excellence and holistic development. Our mission is to empower students with knowledge, skills, and values essential for success in an ever-evolving world.
+          Dayanand Model School is a leading educational institution committed to fostering academic excellence and holistic development. Our mission is to empower students with knowledge, skills, and values essential for success in an ever-evolving world.
           </p>
         </div>
 

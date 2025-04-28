@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}"><!--the second one is variable and the value comes inside this variable is from ajax-->
-    <title>Ethereal Echoes School Fees Dashboard</title>
+    <title>Dayanand Model School Fees Dashboard</title>
     <link rel="icon" type="image/png" href="{{url('logo/logo-color.png')}}">
     <link rel="stylesheet" type="text/css" href="{{url('Bootstrap/css/bootstrap.min.css')}}"> 
     {{--Bootstarp icon Library--}}
@@ -17,10 +17,13 @@
 </style> 
 </head>
 <body>
-<div class="container text-center mt-4 mb-4">
-    <a href="#" style="display: inline-block;"><img src="{{url('logo/logo-color.png')}}" alt="Logo" style="height: 100px; width:300px;"></a>
-    <h1 class="text-danger " style="display: inline-block;">Ethereal Echoes School Fees Dashboard</h1>
+<div class="container text-center mt-4" style="display: flex; align-items: center; justify-content: space-between;">
+    <a href="{{ url('/') }}" style="">
+        <img src="{{ url('logo/logo-color.png') }}" alt="Logo" style="height: 100px; width: 100px; margin-left: 20px;">
+    </a>
+    <h1 class="text-danger" style="margin: 0;">Dayanand Model School Fees Payment</h1>
 </div>
+
 
 
 <div class="container center-container">
