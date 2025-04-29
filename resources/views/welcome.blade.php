@@ -7,9 +7,13 @@
     <title>Dayanand Model School Fees Payment</title>
     <link rel="icon" type="image/png" href="{{url('logo/logo-color.png')}}">
     <link rel="stylesheet" type="text/css" href="{{url('Bootstrap/css/bootstrap.min.css')}}">  
-  
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
 </head>
 <body>
+
 <div class="container text-center mt-4">
     <a href="{{url('/')}}" style="display: inline-block;"><img src="{{url('logo/logo-color.png')}}" alt="Logo" style="height: 150px; width:150px;"></a>
     <h1 class="text-danger " style="display: inline-block;">Dayanand Model School Fees Payment</h1>
@@ -76,6 +80,7 @@
 {{--Bootstrap js and jquery--}}
  <script src="{{url('Bootstrap/js/bootstrap.bundle.min.js')}}" type="text/javascript"></script> 
  <script src="{{url('js/jquery-3.7.1.min.js')}}" type="text/javascript"></script> 
+ <script src="{{ asset('js/app.js') }}"></script>
 <script>
     //Send form data to backend for creating an order id and then return/fetch this order id here back again
 $(document).ready(function(){
@@ -199,6 +204,8 @@ rzp1.open();
     </div>
   </div>
 </div>
+ 
+<script src="{{ asset('js/app.js') }}"></script>
 <script>
     $(document).ready(function(){
     $('#fetchbutton').click(function(e) {      

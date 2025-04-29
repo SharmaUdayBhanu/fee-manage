@@ -6,6 +6,9 @@
     <title>Dayanand Model School Fees Receipt</title>
     <link rel="icon" type="image/png" href="{{url('logo/logo-color.png')}}">
     <link rel="stylesheet" type="text/css" href="{{url('Bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+@vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
 <div class="container">
@@ -89,7 +92,8 @@
     </div>
 </footer>
 
-
+ 
+<script src="{{ asset('js/app.js') }}"></script>
 <script>
         document.getElementById("print").addEventListener("click", function() {
            // Hide the button after printing is triggered

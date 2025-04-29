@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" href="{{url('Bootstrap/css/bootstrap.min.css')}}"> 
     {{--Bootstarp icon Library--}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+@vite(['resources/css/app.css', 'resources/js/app.js'])
 <style>
      .center-container {
             display: flex;
@@ -84,6 +87,8 @@
 
 
 {{--Bootstrap js and jquery--}}
+ 
+<script src="{{ asset('js/app.js') }}"></script>
 <script src="{{url('Bootstrap/js/bootstrap.bundle.min.js')}}" type="text/javascript"></script> 
  <script src="{{url('js/jquery-3.7.1.min.js')}}" type="text/javascript"></script> 
  <script>
