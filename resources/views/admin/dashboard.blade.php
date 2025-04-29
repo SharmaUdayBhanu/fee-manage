@@ -6,7 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}"><!--the second one is variable and the value comes inside this variable is from ajax-->
     <title>Dayanand Model School Fees Dashboard</title>
     <link rel="icon" type="image/png" href="{{url('logo/logo-color.png')}}">
-    <link rel="stylesheet" type="text/css" href="{{url('Bootstrap/css/bootstrap.min.css')}}"> 
+    <link rel="stylesheet" type="text/css" href="{{asset('Bootstrap/css/bootstrap.min.css')}}"> 
     {{--Bootstarp icon Library--}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">

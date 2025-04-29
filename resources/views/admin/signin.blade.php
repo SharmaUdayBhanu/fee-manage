@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}"><!--the second one is variable and the value comes inside this variable is from ajax-->
     <link rel="icon" type="image/png" href="{{url('logo/logo-color.png')}}">
-    <link rel="stylesheet" type="text/css" href="{{url('Bootstrap/css/bootstrap.min.css')}}"> 
+    <link rel="stylesheet" type="text/css" href="{{asset('Bootstrap/css/bootstrap.min.css')}}"> 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
 @vite(['resources/css/app.css', 'resources/js/app.js']) 
