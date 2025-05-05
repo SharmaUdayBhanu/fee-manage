@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     npm \
     nodejs \
-    mysql-client \
+    default-mysql-client \
     && docker-php-ext-install pdo pdo_mysql mbstring zip exif pcntl
 
 # Install Composer
